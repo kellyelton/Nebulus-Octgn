@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<set 
+	name="Set 1" 
+	id="6ac5fedb-edb9-490a-9d2b-9340ccdde51a" 
+	gameId="9997be0f-70ab-493e-906f-37a95e5337d0" 
+	gameVersion="1.0.0.0" 
+	version="1.0.0.0">
+
+<cards>
+	<!-- Ships -->
+	<card id="5262c82c-b8b7-4e5e-bceb-c6e4f7685595" name="Ship 1">
+		<property name="Type" value="Ship"/>
+		<property name="WeaponBaySlots" value="4"/>
+		<property name="ShieldBaySlots" value="1"/>
+		<property name="DroneBaySlots" value="1"/>
+		<property name="HP" value="100"/>
+		<property name="Damage" value="1"/>
+		<property name="Bonus1" value="x2 Damage"/>
+	</card>
+	
+	<!-- Bays -->
+	<!-- Bays - Weapon -->
+	<card id="0b337fbe-b8c5-481c-93d5-135ad7c895da" name="Weapon Bay">
+		<property name="Type" value="Bay Weapon"/>
+		<property name="HP" value="20"/>
+		<property name="Slots" value="3"/>
+	</card>
+	<!-- Bays - Shield -->
+	<card id="1df5d887-005e-4179-ad78-2ed238ad77c2" name="Shield Bay">
+		<property name="Type" value="Bay Shield"/>
+		<property name="HP" value="20"/>
+		<property name="Slots" value="2"/>
+	</card>
+	<!-- Bays - Energy -->
+	<card id="9da81012-d4a8-4907-b6e0-ce7e4b960890" name="Energy Bay">
+		<property name="Type" value="Bay Energy"/>
+		<property name="HP" value="50"/>
+		<property name="Slots" value="10"/>
+	</card>
+	<!-- Bays - Drone -->
+	<card id="ea442367-2bd3-405b-bc3c-b418a5e834a4" name="Drone Bay">
+		<property name="Type" value="Bay Drone"/>
+		<property name="HP" value="20"/>
+		<property name="Slots" value="5"/>
+	</card>
+	
+	<!-- Equipment -->
+	<!-- Equipment - Weapons -->
+	<card id="605a268a-2393-4f29-976c-7bbea4c800a3" name="Laser Lvl1">
+		<property name="Type" value="Equipment Weapon Laser"/>
+		<property name="Energy" value="4"/>
+		<property name="Damage" value="2"/>
+		<property name="HP" value="20"/>
+		<property name="Targets" value="1"/>
+	</card>
+	<card id="3d1e4096-d643-4c7d-884f-f3e1fc6e31a8" name="Laser Lvl2">
+		<property name="Type" value="Equipment Weapon Laser"/>
+		<property name="Energy" value="7"/>
+		<property name="Damage" value="4"/>
+		<property name="HP" value="20"/>
+		<property name="Targets" value="1"/>
+	</card>
+	<card id="a273535f-26a2-4d68-b1f4-22cf2ddd8414" name="Laser Lvl3">
+		<property name="Type" value="Equipment Weapon Laser"/>
+		<property name="Energy" value="10"/>
+		<property name="Damage" value="6"/>
+		<property name="HP" value="20"/>
+		<property name="Targets" value="1"/>
+	</card>
+	<card id="4b2933bd-7a58-4fdb-9c22-6e45f0e635c9" name="Dual Laser Lvl1">
+		<property name="Type" value="Equipment Weapon Laser"/>
+		<property name="Energy" value="8"/>
+		<property name="Damage" value="2"/>
+		<property name="HP" value="20"/>
+		<property name="Targets" value="2"/>
+	</card>
+	<card id="8db63078-df4d-448a-bfba-f5cc73b82c45" name="Dual Laser Lvl2">
+		<property name="Type" value="Equipment Weapon Laser"/>
+		<property name="Energy" value="14"/>
+		<property name="Damage" value="4"/>
+		<property name="HP" value="20"/>
+		<property name="Targets" value="2"/>
+	</card>
+	<card id="036c9288-a310-4c1a-93d8-542dd05ecc50" name="Dual Laser Lvl3">
+		<property name="Type" value="Equipment Weapon Laser"/>
+		<property name="Energy" value="20"/>
+		<property name="Damage" value="6"/>
+		<property name="HP" value="20"/>
+		<property name="Targets" value="2"/>
+	</card>
+	<!-- Equipment - Shields -->
+	<card id="059da509-9293-4122-8ac0-e61aeef31dd3" name="Shield Lvl1">
+		<property name="Type" value="Equipment Defense Shield"/>
+		<property name="Energy" value="4"/>
+		<property name="HP" value="2"/>
+	</card>	
+	<card id="135b46fd-4f7a-41ad-9af5-6a65462bfe73" name="Shield Lvl2">
+		<property name="Type" value="Equipment Defense Shield"/>
+		<property name="Energy" value="6"/>
+		<property name="HP" value="4"/>
+	</card>	
+	<card id="83afe7aa-5ea0-4283-8a86-6ebdc0def68b" name="Shield Lvl3">
+		<property name="Type" value="Equipment Defense Shield"/>
+		<property name="Energy" value="8"/>
+		<property name="HP" value="6"/>
+	</card>
+	<!-- Equipment - Drones -->
+	<card id="f24bf84d-9fd1-4919-b764-3f084814c605" name="Attack Drone">
+		<property name="Type" value="Equipment Drone Attack"/>
+		<property name="Energy" value="5"/>
+		<property name="HP" value="5"/>
+		<property name="Damage" value="1"/>
+		<property name="Targets" value="1"/>
+	</card>
+	<card id="3d5aeffd-3522-4026-8683-4736e3ab15e2" name="Repair Drone">
+		<property name="Type" value="Equipment Drone Defense"/>
+		<property name="Energy" value="5"/>
+		<property name="HP" value="5"/>
+		<property name="Heal" value="3"/>
+		<property name="Targets" value="1"/>
+	</card>
+</cards>
+
+</set>

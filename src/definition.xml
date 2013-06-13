@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<game name="Nebulus" 
+      id="9997be0f-70ab-493e-906f-37a95e5337d0" 
+	  octgnVersion="3.1.0.0" 
+	  version="1.0.0.0" 
+      markersize="25" 
+	  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	  tags="CCG Space Ship Battle" 
+	  description="Nebulus" 
+	  setsurl="http://www.octgn.net" 
+	  gameurl="http://www.octgn.net" 
+	  authors="kelly elton" 
+	  iconurl="http://cdn1.iconfinder.com/data/icons/webdesigncreative/free_icons_64x64_png/Play-mark.png"> 
+    <scripts>
+      <script src="scripts/actions.py" />
+	  <script src="scripts/investor.py" />
+    </scripts>
+    <proxygen definitionsrc="proxy/proxydef.xml">
+    </proxygen>
+    <globalvariables>
+        
+    </globalvariables>
+    <card back="cards/back.png" front="cards/front.png" width="343" height="475" cornerRadius="5">
+        <property name="Type" type="String" textKind="Tokens" />
+		<property name="HP" type="Integer" />
+		<property name="Damage" type="Integer" />
+		<property name="Energy" type="Integer" />
+		<!-- Ship -->
+		<property name="WeaponBaySlots" type="Integer" />
+		<property name="ShieldBaySlots" type="Integer" />
+		<property name="DroneBaySlots" type="Integer" />
+		<property name="Bonus1" type="Integer" />
+		<property name="Bonus2" type="Integer" />
+		<property name="Bonus3" type="Integer" />
+		<property name="Bonus4" type="Integer" />
+		<property name="Bonus5" type="Integer" />
+		<!-- Bay -->
+		<property name="Slots" type="Integer" />
+		<!-- Equipment -->
+		<property name="Targets" type="Integer" />
+		
+    </card>
+    <table name="Table" visibility="undefined" ordered="False" width="1280" height="700" background="images/back.jpg" backgroundStyle="uniformToFill">
+        <groupaction menu="Draw" shortcut="ctrl+D" default="True" execute="draw" />
+        <groupaction menu="Draw X Cards" shortcut="ctrl+shift+D" execute="drawMany" />
+        <groupaction menu="Send Top X Cards to the Discard Pile" execute="mill" />
+        <groupaction menu="Roll a 6-sided Die" shortcut="ctrl+r" execute="rolldice" />
+        <groupaction menu="Flip a Coin" shortcut="ctrl+shift+r" execute="flipcoin" />
+        <groupaction menu="Interrupt Game" shortcut="enter" execute="interrupt"	 />
+        <groupaction menu="Pass" shortcut="tab" execute="passturn" />
+        <cardaction menu="Turn card Sideways" default="True" execute="tap" />
+        <cardaction menu="Flip Card" shortcut="ctrl+f" execute="flip" />
+        <cardaction menu="Discard Card" shortcut="del" execute="discard" />
+        <cardaction menu="Add/Remove Red Highlight" shortcut="ctrl+A" execute="highlightcard" />
+        <cardaction menu="Add Marker" shortcut="ctrl+Q" execute="addmarker" />
+        <cardaction menu="Remove Marker" shortcut="ctrl+W" execute="removemarker" />
+        <cardaction menu="Add Custom Marker..." shortcut="ctrl+shift+Q" batchExecute="addanymarker" />
+    </table>
+   <player summary="Hand:{#Hand} Ship Health:{#Ship Health}">
+    <globalvariable name="standing" value="1" />
+	<counter name="Ship Health" icon="counters/shiphealth.png" default="10"/>
+    <hand name="Hand" shortcut="ctrl+H" visibility="me" ordered="False" width="63" height="88" icon="groups/hand.png">
+       <cardaction menu="Discard Card" shortcut="del" execute="discard" />
+    </hand>
+	<group name="Deck" visibility="none" width="63" height="88" icon="groups/hand.png">
+		<groupaction menu="Shuffle" shortcut="ctrl+S" execute="shuffle" />
+	</group>
+	<group name="Ship" visibility="none" width="63" height="88" icon="groups/hand.png">
+		<groupaction menu="Shuffle" shortcut="ctrl+S" execute="shuffle" />
+	</group>
+	<group name="Discard" visibility="all" width="63" height="88" icon="groups/hand.png">
+		<groupaction menu="Shuffle" shortcut="ctrl+S" execute="shuffle" />
+	</group>
+  </player>
+  <shared>
+
+  </shared>
+  <deck>
+      <section name="Deck" group="Deck" />
+	  <section name="Ship" group="Ship" />
+  </deck>
+</game>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<templates>
+  <blocks>
+    <block type="text" id="name">
+      <location x="5" y="5"/>
+      <text color="#FFFFFF" size="14"/>
+    </block>
+	<block type="text" id="hp">
+		<location x="270" y="7"/>
+		<text color="#FFFFFF" size="16"/>
+		<wordwrap height="18" width="38" align="center" valign="center" shrinktofit="True"/>
+	</block>
+	<block type="text" id="weaponbayslots">
+		<location x="270" y="36"/>
+		<text color="#FFFFFF" size="16"/>
+		<wordwrap height="18" width="38" align="center" valign="center" shrinktofit="True"/>
+	</block>
+	<block type="text" id="shieldbayslots">
+		<location x="198" y="36"/>
+		<text color="#FFFFFF" size="16"/>
+		<wordwrap height="18" width="38" align="center" valign="center" shrinktofit="True"/>
+	</block>
+	<block type="text" id="dronebayslots">
+		<location x="198" y="7"/>
+		<text color="#FFFFFF" size="16"/>
+		<wordwrap height="18" width="38" align="center" valign="center" shrinktofit="True"/>
+	</block>
+	<block type="text" id="shipdamage">
+		<location x="270" y="63"/>
+		<text color="#FFFFFF" size="16"/>
+		<wordwrap height="18" width="38" align="center" valign="center" shrinktofit="True"/>
+	</block>
+    <block type="text" id="bonus">
+      <location x="18" y="329"/>
+	  <text color="#FFFFFF" size="16"/>
+	  <wordwrap height="129" width="301" align="near" valign="near" shrinktofit="True"/>
+    </block>
+  </blocks>
+  <template src="proxy/back.png" default="True">
+    <matches>
+      <match name="property" value="name" />
+    </matches>
+    <textblocks>
+      <link block="name">
+        <property name="Name" format="{}"/>
+      </link>
+    </textblocks>
+  </template>
+  <!-- Ship Type -->
+  <template src="proxy/ship.png">
+    <matches>
+	  <match name="Type" value="Ship"/>
+    </matches>
+    <textblocks>
+      <link block="name">
+        <property name="Name" format="{}"/>
+      </link>
+	  <link block="hp">
+        <property name="HP" format="{}" />
+      </link>
+	  <link block="weaponbayslots">
+        <property name="WeaponBaySlots" format="{}"/>
+      </link>
+	  <link block="shieldbayslots">
+        <property name="ShieldBaySlots" format="{}"/>
+      </link>
+	  <link block="dronebayslots">
+        <property name="DroneBaySlots" format="{}"/>
+      </link>
+	  <link block="shipdamage">
+		<property name="Damage" format="{}"/>
+	  </link>
+	  <link block="bonus" separator="&#xd;&#xa;">
+		<property name="Bonus1" format="* {}"/>
+		<property name="Bonus2" format="* {}"/>
+		<property name="Bonus3" format="* {}"/>
+		<property name="Bonus4" format="* {}"/>
+		<property name="Bonus5" format="* {}"/>
+	  </link>
+    </textblocks>
+  </template>
+</templates>
