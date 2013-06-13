@@ -119,6 +119,11 @@
 		<property name="Repair" value="3"/>
 		<property name="Targets" value="1"/>
 	</card>
+	<!-- Equipment - Energy -->
+	<card id="86b80182-8425-4c4d-8f6d-f8e3e6572775" name="Energy">
+		<property name="Type" value="Equipment Energy"/>
+		<property name="Energy" value="5"/>
+	</card>
 </cards>
 
 </set>

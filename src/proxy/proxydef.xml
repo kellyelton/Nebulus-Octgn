@@ -297,4 +297,26 @@
     </textblocks>
   </template>
   <!-- End Equipment Drone Defense-->
+  <!-- Start Equipment Energy-->
+  <template src="proxy/energy.png">
+    <matches>
+	  <match name="Type" value="Equipment Energy"/>
+    </matches>
+    <textblocks>
+      <link block="name">
+        <property name="Name" format="{}"/>
+      </link>
+	  <link block="r0t1">
+        <property name="Energy" format="{}"/>
+      </link>
+	  <link block="bonus" separator="&#xd;&#xa;">
+		<property name="Bonus1" format="* {}"/>
+		<property name="Bonus2" format="* {}"/>
+		<property name="Bonus3" format="* {}"/>
+		<property name="Bonus4" format="* {}"/>
+		<property name="Bonus5" format="* {}"/>
+	  </link>
+    </textblocks>
+  </template>
+  <!-- End Equipment Energy-->
 </templates>
