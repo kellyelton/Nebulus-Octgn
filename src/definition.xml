@@ -2,7 +2,7 @@
 <game name="Nebulus" 
       id="9997be0f-70ab-493e-906f-37a95e5337d0" 
 	  octgnVersion="3.1.0.0" 
-	  version="1.0.0.1" 
+	  version="1.0.0.2" 
       markersize="25" 
 	  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
 	  tags="CCG Space Ship Battle" 
@@ -29,11 +29,11 @@
 		<property name="WeaponBaySlots" type="Integer" />
 		<property name="ShieldBaySlots" type="Integer" />
 		<property name="DroneBaySlots" type="Integer" />
-		<property name="Bonus1" type="Integer" />
-		<property name="Bonus2" type="Integer" />
-		<property name="Bonus3" type="Integer" />
-		<property name="Bonus4" type="Integer" />
-		<property name="Bonus5" type="Integer" />
+		<property name="Bonus1" type="String" />
+		<property name="Bonus2" type="String" />
+		<property name="Bonus3" type="String" />
+		<property name="Bonus4" type="String" />
+		<property name="Bonus5" type="String" />
 		<!-- Bay -->
 		<property name="Slots" type="Integer" />
 		<!-- Equipment -->
