@@ -116,7 +116,7 @@
 		<property name="Type" value="Equipment Drone Defense"/>
 		<property name="Energy" value="5"/>
 		<property name="HP" value="5"/>
-		<property name="Heal" value="3"/>
+		<property name="Repair" value="3"/>
 		<property name="Targets" value="1"/>
 	</card>
 </cards>

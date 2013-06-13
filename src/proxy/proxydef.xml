@@ -5,27 +5,32 @@
       <location x="5" y="5"/>
       <text color="#FFFFFF" size="14"/>
     </block>
-	<block type="text" id="hp">
+	<block type="text" id="r0t0">
 		<location x="270" y="7"/>
 		<text color="#FFFFFF" size="16"/>
 		<wordwrap height="18" width="38" align="center" valign="center" shrinktofit="True"/>
 	</block>
-	<block type="text" id="weaponbayslots">
+	<block type="text" id="r0t1">
 		<location x="270" y="36"/>
 		<text color="#FFFFFF" size="16"/>
 		<wordwrap height="18" width="38" align="center" valign="center" shrinktofit="True"/>
 	</block>
-	<block type="text" id="shieldbayslots">
+	<block type="text" id="r1t1">
 		<location x="198" y="36"/>
 		<text color="#FFFFFF" size="16"/>
 		<wordwrap height="18" width="38" align="center" valign="center" shrinktofit="True"/>
 	</block>
-	<block type="text" id="dronebayslots">
+	<block type="text" id="r1t2">
+		<location x="198" y="63"/>
+		<text color="#FFFFFF" size="16"/>
+		<wordwrap height="18" width="38" align="center" valign="center" shrinktofit="True"/>
+	</block>
+	<block type="text" id="r1t0">
 		<location x="198" y="7"/>
 		<text color="#FFFFFF" size="16"/>
 		<wordwrap height="18" width="38" align="center" valign="center" shrinktofit="True"/>
 	</block>
-	<block type="text" id="shipdamage">
+	<block type="text" id="r0t2">
 		<location x="270" y="63"/>
 		<text color="#FFFFFF" size="16"/>
 		<wordwrap height="18" width="38" align="center" valign="center" shrinktofit="True"/>
@@ -55,19 +60,19 @@
       <link block="name">
         <property name="Name" format="{}"/>
       </link>
-	  <link block="hp">
+	  <link block="r0t0">
         <property name="HP" format="{}" />
       </link>
-	  <link block="weaponbayslots">
+	  <link block="r0t1">
         <property name="WeaponBaySlots" format="{}"/>
       </link>
-	  <link block="shieldbayslots">
+	  <link block="r1t1">
         <property name="ShieldBaySlots" format="{}"/>
       </link>
-	  <link block="dronebayslots">
+	  <link block="r1t0">
         <property name="DroneBaySlots" format="{}"/>
       </link>
-	  <link block="shipdamage">
+	  <link block="r0t2">
 		<property name="Damage" format="{}"/>
 	  </link>
 	  <link block="bonus" separator="&#xd;&#xa;">
@@ -79,4 +84,217 @@
 	  </link>
     </textblocks>
   </template>
+  <!-- End Ship Type -->
+  <!-- Bay Type -->
+  <template src="proxy/bay.png">
+    <matches>
+	  <match name="Type" value="Bay Weapon"/>
+    </matches>
+    <textblocks>
+      <link block="name">
+        <property name="Name" format="{}"/>
+      </link>
+	  <link block="r0t0">
+        <property name="HP" format="{}" />
+      </link>
+	  <link block="r0t1">
+        <property name="Slots" format="{}"/>
+      </link>
+	  <link block="bonus" separator="&#xd;&#xa;">
+		<property name="Bonus1" format="* {}"/>
+		<property name="Bonus2" format="* {}"/>
+		<property name="Bonus3" format="* {}"/>
+		<property name="Bonus4" format="* {}"/>
+		<property name="Bonus5" format="* {}"/>
+	  </link>
+    </textblocks>
+  </template>
+  <template src="proxy/bay.png">
+    <matches>
+	  <match name="Type" value="Bay Shield"/>
+    </matches>
+    <textblocks>
+      <link block="name">
+        <property name="Name" format="{}"/>
+      </link>
+	  <link block="r0t0">
+        <property name="HP" format="{}" />
+      </link>
+	  <link block="r0t1">
+        <property name="Slots" format="{}"/>
+      </link>
+	  <link block="bonus" separator="&#xd;&#xa;">
+		<property name="Bonus1" format="* {}"/>
+		<property name="Bonus2" format="* {}"/>
+		<property name="Bonus3" format="* {}"/>
+		<property name="Bonus4" format="* {}"/>
+		<property name="Bonus5" format="* {}"/>
+	  </link>
+    </textblocks>
+  </template>
+  <template src="proxy/bay.png">
+    <matches>
+	  <match name="Type" value="Bay Energy"/>
+    </matches>
+    <textblocks>
+      <link block="name">
+        <property name="Name" format="{}"/>
+      </link>
+	  <link block="r0t0">
+        <property name="HP" format="{}" />
+      </link>
+	  <link block="r0t1">
+        <property name="Slots" format="{}"/>
+      </link>
+	  <link block="bonus" separator="&#xd;&#xa;">
+		<property name="Bonus1" format="* {}"/>
+		<property name="Bonus2" format="* {}"/>
+		<property name="Bonus3" format="* {}"/>
+		<property name="Bonus4" format="* {}"/>
+		<property name="Bonus5" format="* {}"/>
+	  </link>
+    </textblocks>
+  </template>
+  <template src="proxy/bay.png">
+    <matches>
+	  <match name="Type" value="Bay Drone"/>
+    </matches>
+    <textblocks>
+      <link block="name">
+        <property name="Name" format="{}"/>
+      </link>
+	  <link block="r0t0">
+        <property name="HP" format="{}" />
+      </link>
+	  <link block="r0t1">
+        <property name="Slots" format="{}"/>
+      </link>
+	  <link block="bonus" separator="&#xd;&#xa;">
+		<property name="Bonus1" format="* {}"/>
+		<property name="Bonus2" format="* {}"/>
+		<property name="Bonus3" format="* {}"/>
+		<property name="Bonus4" format="* {}"/>
+		<property name="Bonus5" format="* {}"/>
+	  </link>
+    </textblocks>
+  </template>
+  <!-- End Bay Types -->
+  <!-- Start Equipment Weapon Laser-->
+  <template src="proxy/weapon.png">
+    <matches>
+	  <match name="Type" value="Equipment Weapon Laser"/>
+    </matches>
+    <textblocks>
+      <link block="name">
+        <property name="Name" format="{}"/>
+      </link>
+	  <link block="r0t0">
+        <property name="HP" format="{}" />
+      </link>
+	  <link block="r0t1">
+        <property name="Energy" format="{}"/>
+      </link>
+	  <link block="r0t2">
+        <property name="Damage" format="{}"/>
+      </link>
+	  <link block="r1t0">
+        <property name="Targets" format="{}"/>
+      </link>
+	  <link block="bonus" separator="&#xd;&#xa;">
+		<property name="Bonus1" format="* {}"/>
+		<property name="Bonus2" format="* {}"/>
+		<property name="Bonus3" format="* {}"/>
+		<property name="Bonus4" format="* {}"/>
+		<property name="Bonus5" format="* {}"/>
+	  </link>
+    </textblocks>
+  </template>
+  <!-- End Equipment Weapon Laser-->
+  <!-- Start Equipment Defense Shield-->
+  <template src="proxy/shield.png">
+    <matches>
+	  <match name="Type" value="Equipment Defense Shield"/>
+    </matches>
+    <textblocks>
+      <link block="name">
+        <property name="Name" format="{}"/>
+      </link>
+	  <link block="r0t0">
+        <property name="HP" format="{}" />
+      </link>
+	  <link block="r0t1">
+        <property name="Energy" format="{}"/>
+      </link>
+	  <link block="bonus" separator="&#xd;&#xa;">
+		<property name="Bonus1" format="* {}"/>
+		<property name="Bonus2" format="* {}"/>
+		<property name="Bonus3" format="* {}"/>
+		<property name="Bonus4" format="* {}"/>
+		<property name="Bonus5" format="* {}"/>
+	  </link>
+    </textblocks>
+  </template>
+  <!-- End Equipment Defense Shield-->
+  <!-- Start Equipment Drone Attack-->
+  <template src="proxy/attackdrone.png">
+    <matches>
+	  <match name="Type" value="Equipment Drone Attack"/>
+    </matches>
+    <textblocks>
+      <link block="name">
+        <property name="Name" format="{}"/>
+      </link>
+	  <link block="r0t0">
+        <property name="HP" format="{}" />
+      </link>
+	  <link block="r0t1">
+        <property name="Energy" format="{}"/>
+      </link>
+	  <link block="r0t2">
+        <property name="Damage" format="{}"/>
+      </link>
+	  <link block="r1t0">
+        <property name="Targets" format="{}"/>
+      </link>
+	  <link block="bonus" separator="&#xd;&#xa;">
+		<property name="Bonus1" format="* {}"/>
+		<property name="Bonus2" format="* {}"/>
+		<property name="Bonus3" format="* {}"/>
+		<property name="Bonus4" format="* {}"/>
+		<property name="Bonus5" format="* {}"/>
+	  </link>
+    </textblocks>
+  </template>
+  <!-- End Equipment Drone Attack-->
+  <!-- Start Equipment Drone Defense-->
+  <template src="proxy/defensedrone.png">
+    <matches>
+	  <match name="Type" value="Equipment Drone Defense"/>
+    </matches>
+    <textblocks>
+      <link block="name">
+        <property name="Name" format="{}"/>
+      </link>
+	  <link block="r0t0">
+        <property name="HP" format="{}" />
+      </link>
+	  <link block="r0t1">
+        <property name="Energy" format="{}"/>
+      </link>
+	  <link block="r1t0">
+        <property name="Targets" format="{}"/>
+      </link>
+	  <link block="r1t2">
+        <property name="Repair" format="{}"/>
+      </link>
+	  <link block="bonus" separator="&#xd;&#xa;">
+		<property name="Bonus1" format="* {}"/>
+		<property name="Bonus2" format="* {}"/>
+		<property name="Bonus3" format="* {}"/>
+		<property name="Bonus4" format="* {}"/>
+		<property name="Bonus5" format="* {}"/>
+	  </link>
+    </textblocks>
+  </template>
+  <!-- End Equipment Drone Defense-->
 </templates>

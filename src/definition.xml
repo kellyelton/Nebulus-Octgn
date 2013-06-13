@@ -38,6 +38,7 @@
 		<property name="Slots" type="Integer" />
 		<!-- Equipment -->
 		<property name="Targets" type="Integer" />
+		<property name="Repair" type="Integer"/>
 		
     </card>
     <table name="Table" visibility="undefined" ordered="False" width="1280" height="700" background="images/back.jpg" backgroundStyle="uniformToFill">
