@@ -2,7 +2,7 @@
 <game name="Nebulus" 
       id="9997be0f-70ab-493e-906f-37a95e5337d0" 
 	  octgnVersion="3.1.0.0" 
-	  version="1.0.0.3" 
+	  version="1.0.0.4" 
       markersize="25" 
 	  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
 	  tags="CCG Space Ship Battle" 
